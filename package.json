@@ -1,7 +1,7 @@
 {
   "name": "figui-icons",
-  "version": "1.0.0",
-  "description": "A React icon library with modern SVG icons",
+  "version": "0.0.1",
+  "description": "A Open Source UI3 React icon library",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -44,15 +44,15 @@
     "ui",
     "components"
   ],
-  "author": "Your Name",
+  "author": "anxndsgn",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/figui-icons.git"
+    "url": "https://github.com/anxndsgn/figui-icons.git"
   },
-  "homepage": "https://github.com/yourusername/figui-icons#readme",
+  "homepage": "https://figui.dev",
   "bugs": {
-    "url": "https://github.com/yourusername/figui-icons/issues"
+    "url": "https://github.com/anxndsgn/figui-icons/issues"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
