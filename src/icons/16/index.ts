@@ -1,7 +1,5 @@
 // Export all 16px icon components
-export { Heart, default as HeartIcon } from './Heart';
-export { Home, default as HomeIcon } from './Home';
-export { User, default as UserIcon } from './User';
+export { Star, default as StarIcon } from './Star';
 
 // Export base component for 16px icons
 export { Icon16 as Icon } from '../../components/Icon16';
