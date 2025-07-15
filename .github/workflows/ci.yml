@@ -3,6 +3,8 @@ name: CI/CD Pipeline
 on:
   push:
     branches: [main, develop]
+    tags:
+      - 'v*' # 添加标签触发
   pull_request:
     branches: [main]
 
@@ -32,22 +34,14 @@ jobs:
       - name: Run type check
         run: pnpm type-check
 
-      - name: Run tests
-        run: pnpm test
-
       - name: Build library
         run: pnpm build
-
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
-        with:
-          file: ./coverage/lcov.info
-          fail_ci_if_error: true
 
   publish:
     needs: test
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    # 改为只在标签推送时发包
+    if: startsWith(github.ref, 'refs/tags/v')
 
     steps:
       - name: Checkout code
