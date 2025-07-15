@@ -10,4 +10,4 @@ export { Icon24 } from './components/Icon24';
 export type { IconProps, IconSize, IconConfig } from './types';
 
 // Package version
-export const VERSION = '1.0.0';
+export const VERSION = '0.0.2';
